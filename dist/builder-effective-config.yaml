@@ -1,0 +1,21 @@
+directories:
+  output: dist
+  buildResources: build
+appId: no.horten.lydbibliotek
+productName: Horten Lydbibliotek
+files:
+  - filter:
+      - '**/*'
+      - '!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}'
+      - '!node_modules/*/{test,__tests__}'
+mac:
+  icon: build/icon.icns
+  target:
+    - dmg
+    - zip
+win:
+  icon: build/icon.ico
+  target:
+    - nsis
+    - zip
+electronVersion: 36.3.0

@@ -1,0 +1,37 @@
+{
+  "name": "lydbibliotek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^36.3.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "no.horten.lydbibliotek",
+    "productName": "Horten Lydbibliotek",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!node_modules/*/{test,__tests__}"
+    ],
+    "mac": {
+      "icon": "build/icon.icns",
+      "target": ["dmg", "zip"]
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "target": ["nsis", "zip"]
+    }
+  }
+}

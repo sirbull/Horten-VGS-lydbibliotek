@@ -40,23 +40,4 @@ Installer og bygg med:
   npm install
   npm run build
 
-Alternativt: Sett opp GitHub Actions for kryssbygging
-
-Mappestruktur:
-
-lydbibliotek/
-├── index.html
-├── main.js
-├── preload.js
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── backgrounds/
-│   └── bg1.jpg ... bg9.jpg
-├── assets/
-│   └── logo.svg
-├── build/
-│   └── icon.icns / icon.ico
-├── package.json
-
+Alternativt: Sett opp GitHub Actions for kryssbygging.
